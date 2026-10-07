@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skyphone | Tecnología que conecta</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <span>Sky<span>phone</span></span>
+        </div>
+
+        <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                TECNOLOGÍA • ACCESORIOS • SERVICIO
+            </span>
+
+            <h1>
+                Tecnología que
+                <span>conecta</span>
+            </h1>
+
+            <p>
+                Encontrá celulares, accesorios y soluciones tecnológicas
+                para mantenerte siempre conectado.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#productos" class="btn primary">
+                    Ver productos
+                </a>
+
+                <a href="#contacto" class="btn secondary">
+                    Contactanos
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-phone">
+
+            <div class="phone-glow"></div>
+
+            <div class="phone">
+
+                <div class="phone-camera">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="phone-screen">
+                    <span>SKYPHONE</span>
+                    <small>Technology</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORÍAS ================= -->
+
+    <section class="categories">
+
+        <div class="category">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Celulares</h3>
+            <p>Equipos para todos los estilos.</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Accesorios</h3>
+            <p>Protección y complementos.</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Servicio técnico</h3>
+            <p>Soluciones para tus dispositivos.</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Garantía</h3>
+            <p>Compra con confianza.</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section class="products-section" id="productos">
+
+        <div class="section-title">
+
+            <span>LO MÁS BUSCADO</span>
+
+            <h2>Nuestros productos</h2>
+
+            <p>
+                Tecnología y accesorios seleccionados para vos.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+
+                <div class="product-info">
+
+                    <small>SMARTPHONE</small>
+
+                    <h3>Skyphone X1</h3>
+
+                    <p>
+                        Pantalla de alta resolución y excelente rendimiento.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>C$ 8,999</strong>
+
+                        <button onclick="consultarProducto('Skyphone X1')">
+                            Consultar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <div class="product-info">
+
+                    <small>SMARTPHONE</small>
+
+                    <h3>Skyphone Pro</h3>
+
+                    <p>
+                        Potencia, diseño y tecnología en un solo equipo.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>C$ 12,499</strong>
+
+                        <button onclick="consultarProducto('Skyphone Pro')">
+                            Consultar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+
+                <div class="product-info">
+
+                    <small>ACCESORIO</small>
+
+                    <h3>Audífonos Bluetooth</h3>
+
+                    <p>
+                        Sonido inalámbrico para disfrutar donde quieras.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>C$ 850</strong>
+
+                        <button onclick="consultarProducto('Audífonos Bluetooth')">
+                            Consultar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <i class="fa-solid fa-mobile-button"></i>
+                </div>
+
+                <div class="product-info">
+
+                    <small>ACCESORIO</small>
+
+                    <h3>Protector Premium</h3>
+
+                    <p>
+                        Protección para mantener tu teléfono como nuevo.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>C$ 200</strong>
+
+                        <button onclick="consultarProducto('Protector Premium')">
+                            Consultar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICIOS ================= -->
+
+    <section class="services" id="servicios">
+
+        <div class="section-title">
+
+            <span>LO QUE HACEMOS</span>
+
+            <h2>Servicios Skyphone</h2>
+
+            <p>
+                Más que una tienda de tecnología.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3>Mantenimiento</h3>
+
+                <p>
+                    Diagnóstico y mantenimiento de dispositivos móviles.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <h3>Reparaciones</h3>
+
+                <p>
+                    Soluciones para problemas de software y hardware.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>Garantía</h3>
+
+                <p>
+                    Comprá con tranquilidad y respaldo Skyphone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+
+    <section class="about" id="nosotros">
+
+        <div class="about-content">
+
+            <span>CONOCÉ SKYPHONE</span>
+
+            <h2>
+                Tecnología al alcance de todos.
+            </h2>
+
+            <p>
+                En Skyphone buscamos ofrecer productos tecnológicos,
+                accesorios y servicios con una atención cercana,
+                transparente y pensada para nuestros clientes.
+            </p>
+
+            <p>
+                Nuestro objetivo es que encuentres la tecnología que
+                necesitás sin complicaciones.
+            </p>
+
+            <a href="#contacto" class="btn primary">
+                Conocenos
+            </a>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div class="about-logo">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <h3>SKYPHONE</h3>
+
+            <p>
+                Tecnología que conecta.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section class="contact" id="contacto">
+
+        <div class="section-title">
+
+            <span>ESTAMOS PARA VOS</span>
+
+            <h2>¿Necesitás ayuda?</h2>
+
+            <p>
+                Escribinos y te ayudaremos a encontrar lo que buscás.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Juigalpa, Chontales, Nicaragua</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>+505 0000-0000</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>Escribinos directamente</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    placeholder="Tu teléfono"
+                    required
+                >
+
+                <textarea
+                    id="mensaje"
+                    rows="5"
+                    placeholder="¿Qué necesitás?"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn primary">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <span>Sky<span>phone</span></span>
+        </div>
+
+        <p>
+            © 2026 Skyphone. Todos los derechos reservados.
+        </p>
+
+        <div class="social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
