@@ -5,21 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#12b8d4">
-    <meta name="description" content="Skyphone Juigalpa. Celulares, accesorios y soluciones tecnológicas. Contactanos por WhatsApp.">
+    <meta name="description" content="Skyphone Juigalpa: celulares, accesorios y tecnología.">
 
     <title>Skyphone | Tecnología que conecta</title>
 
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Corrección de los enlaces resaltados en azul -->
+    <style>
+        .contact-info a,
+        .contact-info a:visited,
+        .contact-info a:hover,
+        .contact-info a:active {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #12b8d4;
+        }
+
+        .social a {
+            text-decoration: none;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header class="header">
-
         <div class="logo">
             <div class="logo-icon">
                 <i class="fa-solid fa-mobile-screen-button"></i>
@@ -38,15 +62,12 @@
         <button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">
             <i class="fa-solid fa-bars"></i>
         </button>
-
     </header>
 
 
     <!-- INICIO -->
     <section class="hero" id="inicio">
-
         <div class="hero-content">
-
             <span class="hero-tag">
                 TECNOLOGÍA • ACCESORIOS • SERVICIO
             </span>
@@ -62,25 +83,15 @@
             </p>
 
             <div class="hero-buttons">
-
-                <a href="#productos" class="btn primary">
-                    Ver productos
-                </a>
-
-                <a href="#contacto" class="btn secondary">
-                    Contactanos
-                </a>
-
+                <a href="#productos" class="btn primary">Ver productos</a>
+                <a href="#contacto" class="btn secondary">Contactanos</a>
             </div>
-
         </div>
 
         <div class="hero-phone">
-
             <div class="phone-glow"></div>
 
             <div class="phone">
-
                 <div class="phone-camera">
                     <div></div>
                     <div></div>
@@ -91,17 +102,13 @@
                     <span>SKYPHONE</span>
                     <small>Technology</small>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
 
     <!-- CATEGORÍAS -->
     <section class="categories">
-
         <div class="category">
             <i class="fa-solid fa-mobile-screen"></i>
             <h3>Celulares</h3>
@@ -125,91 +132,100 @@
             <h3>Garantía</h3>
             <p>Compra con confianza.</p>
         </div>
-
     </section>
 
 
     <!-- PRODUCTOS -->
     <section class="products-section" id="productos">
-
         <div class="section-title">
-            <span>LO MÁS BUSCADO</span>
+            <span>ACCESORIOS DESTACADOS</span>
             <h2>Nuestros productos</h2>
-            <p> Tecnología y accesorios seleccionados para vos. </p>
+            <p>Calidad, estilo y tecnología para vos.</p>
         </div>
 
         <div class="products-grid">
 
+            <!-- PRODUCTO 1 -->
             <article class="product-card">
                 <div class="product-image">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                </div>
-
-                <div class="product-info">
-                    <small>SMARTPHONE</small>
-                    <h3>Skyphone X1</h3>
-                    <p>Pantalla de alta resolución y excelente rendimiento.</p>
-
-                    <div class="product-bottom">
-                        <strong>C$ 8,999</strong>
-                        <button onclick="consultarProducto('Skyphone X1', 'C$ 8,999')">
-                            Consultar
-                        </button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                </div>
-
-                <div class="product-info">
-                    <small>SMARTPHONE</small>
-                    <h3>Skyphone Pro</h3>
-                    <p>Potencia, diseño y tecnología en un solo equipo.</p>
-
-                    <div class="product-bottom">
-                        <strong>C$ 12,499</strong>
-                        <button onclick="consultarProducto('Skyphone Pro', 'C$ 12,499')">
-                            Consultar
-                        </button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="product-card">
-                <div class="product-image">
+                    <!-- Aquí podrás agregar la imagen de los AirPods más adelante -->
                     <i class="fa-solid fa-headphones"></i>
                 </div>
 
                 <div class="product-info">
-                    <small>ACCESORIO</small>
-                    <h3>Audífonos Bluetooth</h3>
-                    <p>Sonido inalámbrico para disfrutar donde quieras.</p>
+                    <small>AUDIO INALÁMBRICO</small>
+                    <h3>AirPods Pro 2</h3>
+                    <p>Audífonos inalámbricos para disfrutar tu música.</p>
 
                     <div class="product-bottom">
-                        <strong>C$ 850</strong>
-                        <button onclick="consultarProducto('Audífonos Bluetooth', 'C$ 850')">
+                        <strong>C$ 730</strong>
+                        <button onclick="consultarProducto('AirPods Pro 2', 730)">
                             Consultar
                         </button>
                     </div>
                 </div>
             </article>
 
+
+            <!-- PRODUCTO 2 -->
             <article class="product-card">
                 <div class="product-image">
-                    <i class="fa-solid fa-mobile-button"></i>
+                    <!-- Aquí podrás agregar la imagen del cargador iPhone -->
+                    <i class="fa-solid fa-plug"></i>
                 </div>
 
                 <div class="product-info">
-                    <small>ACCESORIO</small>
-                    <h3>Protector Premium</h3>
-                    <p>Protección para mantener tu teléfono como nuevo.</p>
+                    <small>CARGADOR</small>
+                    <h3>Cargador iPhone cubo + cable</h3>
+                    <p>Cargador con cubo y cable para tu iPhone.</p>
+
+                    <div class="product-bottom">
+                        <strong>C$ 400</strong>
+                        <button onclick="consultarProducto('Cargador iPhone cubo + cable', 400)">
+                            Consultar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <!-- Aquí podrás agregar la imagen del cargador Samsung -->
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div class="product-info">
+                    <small>CARGADOR</small>
+                    <h3>Cargador Samsung 45 W</h3>
+                    <p>Cargador Samsung de 45 watts.</p>
+
+                    <div class="product-bottom">
+                        <strong>C$ 350</strong>
+                        <button onclick="consultarProducto('Cargador Samsung de 45 watts', 350)">
+                            Consultar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- PRODUCTO 4 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <!-- Aquí podrás agregar las imágenes de los protectores -->
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <div class="product-info">
+                    <small>PROTECCIÓN</small>
+                    <h3>Protector iPhone Leather</h3>
+                    <p>Variedad de colores y modelos Leather para iPhone.</p>
 
                     <div class="product-bottom">
                         <strong>C$ 200</strong>
-                        <button onclick="consultarProducto('Protector Premium', 'C$ 200')">
+                        <button onclick="consultarProducto('Protector iPhone Leather, variedad de colores y modelos', 200)">
                             Consultar
                         </button>
                     </div>
@@ -218,22 +234,20 @@
 
         </div>
 
-        <p class="section-title">
+        <div class="section-title">
             <a class="btn primary"
                href="https://wa.me/50588365330?text=Hola%2C%20Skyphone.%20Quiero%20consultar%20por%20sus%20productos."
                target="_blank"
                rel="noopener noreferrer">
                 <i class="fa-brands fa-whatsapp"></i>
-                Consultar catálogo por WhatsApp
+                Consultar por WhatsApp
             </a>
-        </p>
-
+        </div>
     </section>
 
 
     <!-- SERVICIOS -->
     <section class="services" id="servicios">
-
         <div class="section-title">
             <span>LO QUE HACEMOS</span>
             <h2>Servicios Skyphone</h2>
@@ -241,7 +255,6 @@
         </div>
 
         <div class="services-grid">
-
             <div class="service">
                 <div class="service-icon">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -265,17 +278,13 @@
                 <h3>Garantía</h3>
                 <p>Comprá con tranquilidad y respaldo Skyphone.</p>
             </div>
-
         </div>
-
     </section>
 
 
     <!-- NOSOTROS -->
     <section class="about" id="nosotros">
-
         <div class="about-content">
-
             <span>CONOCÉ SKYPHONE</span>
 
             <h2>Tecnología al alcance de todos.</h2>
@@ -291,29 +300,22 @@
                 necesitás sin complicaciones.
             </p>
 
-            <a href="#contacto" class="btn primary">
-                Conocenos
-            </a>
-
+            <a href="#contacto" class="btn primary">Conocenos</a>
         </div>
 
         <div class="about-box">
-
             <div class="about-logo">
                 <i class="fa-solid fa-mobile-screen-button"></i>
             </div>
 
             <h3>SKYPHONE</h3>
             <p>Tecnología que conecta.</p>
-
         </div>
-
     </section>
 
 
     <!-- CONTACTO -->
     <section class="contact" id="contacto">
-
         <div class="section-title">
             <span>ESTAMOS PARA VOS</span>
             <h2>¿Necesitás ayuda?</h2>
@@ -321,7 +323,6 @@
         </div>
 
         <div class="contact-container">
-
             <div class="contact-info">
 
                 <div class="contact-item">
@@ -386,9 +387,7 @@
 
             </div>
 
-
             <form id="contactForm">
-
                 <input
                     type="text"
                     id="nombre"
@@ -416,22 +415,17 @@
                     <i class="fa-brands fa-whatsapp"></i>
                     Enviar por WhatsApp
                 </button>
-
             </form>
-
         </div>
-
     </section>
 
 
     <!-- FOOTER -->
     <footer>
-
         <div class="footer-logo">
             <div class="logo-icon">
                 <i class="fa-solid fa-mobile-screen-button"></i>
             </div>
-
             <span>Sky<span>phone</span></span>
         </div>
 
@@ -439,11 +433,10 @@
         <p>Tecnología que conecta.</p>
 
         <div class="social">
-
             <a href="https://www.facebook.com/share/1D5Zrgp7m4/?mibextid=wwXIfr"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="Facebook de Skyphone"
+               aria-label="Facebook"
                title="Facebook">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
@@ -451,7 +444,7 @@
             <a href="https://www.tiktok.com/@skyphone.nic"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="TikTok de Skyphone"
+               aria-label="TikTok"
                title="TikTok">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
@@ -459,7 +452,7 @@
             <a href="https://wa.me/50588365330"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="WhatsApp de Skyphone"
+               aria-label="WhatsApp"
                title="WhatsApp">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -469,24 +462,20 @@
                title="Llamar">
                 <i class="fa-solid fa-phone"></i>
             </a>
-
         </div>
-
     </footer>
 
 
-    <!-- FUNCIONES DE LA PÁGINA -->
+    <!-- FUNCIONES -->
     <script>
         const WHATSAPP = "50588365330";
 
         function toggleMenu() {
-            const nav = document.getElementById("nav");
-            nav.classList.toggle("active");
+            document.getElementById("nav").classList.toggle("active");
         }
 
         function cerrarMenu() {
-            const nav = document.getElementById("nav");
-            nav.classList.remove("active");
+            document.getElementById("nav").classList.remove("active");
         }
 
         function abrirWhatsApp(mensaje) {
@@ -499,7 +488,7 @@
         function consultarProducto(producto, precio) {
             const mensaje =
                 "Hola, Skyphone. Estoy interesado/a en " + producto +
-                ", que aparece a " + precio +
+                ", con precio de C$ " + precio +
                 ". ¿Está disponible?";
 
             abrirWhatsApp(mensaje);
